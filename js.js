@@ -7,6 +7,20 @@ function playSound(clippath) {
   sound.play();
 }
 
+function fullscreenit(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
+
+
 var focused = "title";
 function fcs(panel) {
   $(focused).className = "";
@@ -15,6 +29,13 @@ function fcs(panel) {
 }
 
 fcs(focused);
+
+
+function begin() {
+  fullscreenit(document.documentElement);
+  fcs("selectyou");
+}
+
 
 var iam = [];
 
