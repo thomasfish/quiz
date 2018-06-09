@@ -19,9 +19,7 @@ function fullscreenit(element) {
   }
 }
 
-
-
-var focused = "title";
+var focused = "fullscreen";
 function fcs(panel) {
   $(focused).className = "";
   $(panel).className = "active";
@@ -33,7 +31,7 @@ fcs(focused);
 
 function begin() {
   fullscreenit(document.documentElement);
-  fcs("selectyou");
+  fcs("title");
 }
 
 
