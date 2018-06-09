@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-sizing;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+section {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  position: relative;
+}
+
+section.active {
+  height: 100%;
+}
+
+
+body {
+  text-align: center;
+}
+
+
+#title {
+  background: #000;
+  color: #fff;
+}
+
+#title h1 {
+  font-family: "Limelight", serif;
+  font-size: 25vw;
+}
+
+#title a {
+  font-family: serif;
+  font-style: italic;
+  font-size: 15vw;
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+#selectyou {
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+
+#selectyou h2 {
+  font-weight: 400;
+  font-size: 25vw;
+  font-style: italic;
+  font-family: serif;
+  border-bottom: 2px solid #999;
+  margin: 5vw;
+  margin-bottom: 10vw;
+  padding-bottom: 7vw;
+}
+
+#selectyou a {
+  font-family: serif;
+  font-style: italic;
+  font-size: 10vw;
+  display: inline-block;
+  padding: 5px;
+  border-bottom: 2px solid #999;
+  margin-bottom: 5vw;
+  color: #000;
+  text-decoration: none;
+}
