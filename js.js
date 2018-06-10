@@ -35,9 +35,13 @@ function begin() {
 }
 
 
-var iam = [];
+var iam = 0;
 
 function person(choice) {
   iam = choice;
   fcs("ftf");
+}
+
+function buzz() {
+  playSound("buzzer" + iam + ".wav");
 }
