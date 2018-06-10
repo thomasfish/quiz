@@ -19,15 +19,7 @@ function fullscreenit(element) {
   }
 }
 
-isfs = false;
-
-function fs() {
-  if (!fs) {
-    fullscreenit(document.documentElement);
-  }
-}
-
-var focused = "wtp1";
+var focused = "fullscreen";
 function fcs(panel) {
   $(focused).className = "";
   $(panel).className = "active";
