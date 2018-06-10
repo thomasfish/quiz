@@ -45,3 +45,33 @@ function person(choice) {
 function buzz() {
   playSound("buzzer" + iam + ".wav");
 }
+
+
+// WTP Stuff
+
+var wtpRound = 0;
+var wtpNextCardId = ["","",""];
+
+var allyOrBetray = 0;
+
+function wtp(round) {
+  wtpRound = round;
+  fcs("wtpChoice");
+}
+
+function lockIn(choice, round) {
+  allyOrBetray = choice;
+  playSound("chosen.wav");
+  $("choice").style.opacity = 0;
+  setTimeout(function(){
+    $("choice").style.display = "none";
+    $("reveal").style.display = "block";
+  }, 2000);
+  setTimeout(function(){
+    $("reveal").style.opacity = 1;
+  }, 2001);
+}
+
+function reveal() {
+  playSound("choice" + allyOrBetray + ".wav");
+}

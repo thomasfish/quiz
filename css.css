@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-sizing;
+  box-sizing: border-box;
 }
 
 input,
@@ -133,13 +133,12 @@ body {
 }
 
 
-#wtp1, #wtp2, #wtp3 {
+#wtpChoice {
   background: url("wtp-bg.png");
   font-family: monospace;
-  padding-top: 20vw;
 }
 
-.wtpa {
+#wtpChoice a {
   border: 2px solid rgba(0,255,0,0.5);
   color: #00FF00;
   font-size: 13vw;
@@ -147,4 +146,23 @@ body {
   text-decoration: none;
   padding: 2vw;
   display: inline-block;
+}
+
+#wtpChoice a:first-child {
+  margin-top: 35vw;
+}
+
+#wtpReveal {
+  background: url("wtp-bg.png");
+  font-family: monospace;
+}
+
+#choice {
+  transition: opacity 2s linear;
+}
+
+#reveal {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s linear;
 }

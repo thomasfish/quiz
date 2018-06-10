@@ -36,13 +36,18 @@
   <section id="ftf">
     <a href="#" onmousedown="buzz()" class="buzzer"></a>
     <br>
-    <a href="#" onclick="wtp1()" class="next">next</a>
+    <a href="#" onclick="wtp(0)" class="next">next</a>
   </section>
 
-  <section id="wtp1">
-    <a href="#" onclick="lockin(0,1)" class="wtpa">ally</a>
-    <br>
-    <a href="#" onclick="lockin(0,2)" class="wtpa">betray</a>
+  <section id="wtpChoice">
+    <div id="choice">
+      <a href="#" onclick="lockIn(0)">ally</a>
+      <br>
+      <a href="#" onclick="lockIn(1)">betray</a>
+    </div>
+    <div id="reveal">
+      <a href="#" onclick="reveal()">REVEAL</a>
+    </div>
   </section>
 
   <script src="js.js"></script>
