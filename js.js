@@ -19,7 +19,7 @@ function fullscreenit(element) {
   }
 }
 
-var focused = "fullscreen";
+var focused = "wtp1";
 function fcs(panel) {
   $(focused).className = "";
   $(panel).className = "active";
