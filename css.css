@@ -100,15 +100,18 @@ body {
 }
 
 
+#ftf {
+  background: url("ftf-bg.png");
+}
+
 #ftf .buzzer {
   width: 70vw;
   height: 70vw;
   margin: 30vw auto;
   border-radius: 50%;
   display: inline-block;
-  background: red;
-  box-shadow: inset 0 5vw 8vw rgba(255,255,255,0.7),
-              0 5vw 0 darkred;
+  background: #F4B183;
+  box-shadow: 0 5vw 0 #c17c4d;
   transform: scaleY(0.8);
   top: 0;
   transition: box-shadow 0.2s, top 0.2s;
@@ -116,8 +119,7 @@ body {
 }
 #ftf .buzzer:active {
   top: 3vw;
-  box-shadow: inset 0 5vw 8vw rgba(255,255,255,0.7),
-              0 0 0 darkred;
+  box-shadow: 0 0 0 #c17c4d;
 }
 
 #ftf .next {
