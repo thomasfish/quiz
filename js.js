@@ -61,7 +61,7 @@ function wtp(round) {
 
 function lockIn(choice, round) {
   allyOrBetray = choice;
-  playSound("chosen.wav");
+  playSound("ready.wav");
   $("choice").style.opacity = 0;
   setTimeout(function(){
     $("choice").style.display = "none";
@@ -69,7 +69,7 @@ function lockIn(choice, round) {
   }, 2000);
   setTimeout(function(){
     $("reveal").style.opacity = 1;
-  }, 2001);
+  }, 2500);
 }
 
 function reveal() {
