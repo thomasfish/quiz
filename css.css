@@ -170,3 +170,10 @@ body {
   opacity: 0;
   transition: opacity 2s linear;
 }
+
+#reveal a {
+  margin-top: 60vw !important;
+  border: #00ff00;
+  color: #183820;
+  background: #00ff00;
+}
