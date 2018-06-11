@@ -55,7 +55,9 @@ body {
 
 #title h1 {
   font-family: "Limelight", serif;
-  font-size: 25vw;
+  font-size: 17vw;
+  line-height: 1.4;
+  margin: 30vw auto;
 }
 
 #title a {
