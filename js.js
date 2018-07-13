@@ -74,4 +74,12 @@ function lockIn(choice, round) {
 
 function reveal() {
   playSound("choice" + allyOrBetray + ".wav");
+  $("reveal").style.opacity = 0;
+  setTimeout(function(){
+    $("choice").style.display = "block";
+    $("reveal").style.display = "none";
+  }, 2000);
+  setTimeout(function(){
+    $("choice").style.opacity = 1;
+  }, 2500);
 }
